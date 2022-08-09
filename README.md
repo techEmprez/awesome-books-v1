@@ -8,7 +8,7 @@ This is a book collection site, with plain JavaScript implementation
 
 ## Interested to view my Portfolio... Click here
 
-https://techemprez.github.io/Awesome-books/
+[Awesome Books](https://techemprez.github.io/Awesome-books/)
 
 ## Author
 
