@@ -40,7 +40,6 @@ function Book(title, author) {
   this.title = title;
   this.author = author;
 }
-
 function UI() {}
 
 UI.prototype.addBookToUI = function (newBook) {
