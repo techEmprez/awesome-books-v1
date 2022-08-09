@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body onload="startTime()">
+    <header>
+      <nav class="fixed-top d-flex flex-column">
+        <div class="container-fluid navbar-dark py-2 navbar">
+          <a class="navbar-brand mx-5 fs-4" href="./index.html">Awesome Books</a>
+          <ul class="nav mx-5 justify-content-between container">
+            <li class="nav-item">
+              <a class="nav-link text-white" aria-current="page" href="#list">Booklist</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#add">Add a Book</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <article class="time text-end py-1 pr-10 fs-5 text-white" id="time"></article>
+      </nav>
+    </header>
+    <section class="block" id="list">
+      <h1 class="main-title text-center pb-5 text-white">Awesome Books</h1>
+      <ul class="book-list list-group mb-5 border border-secondary"></ul>
+    </section>
+    <section class="container-60 align-self-center none" id="add">
+      <form action="#" class="
+          add-book
+          d-flex
+          flex-column
+          justify-content-center
+          align-items-center
+        ">
+        <h3 class="text-center fs-1 mb-3 text-white">Add a book</h3>
+        <div class="input-container width-full">
+          <input type="text" class="title form-control" placeholder="Title" />
+        </div>
+        <div class="input-container my-2 width-full">
+          <input type="text" class="author form-control" placeholder="Author" />
+        </div>
+        <button class="add btn mt-3 text-white" type="submit">
+          Add
+        </button>
+      </form>
+    </section>
+    <section class="text-center none text-white" id="contact">
+      <h3 class="fs-1 mb-3 text-white pt-5">Contact Information</h3>
+      <p class="fs-4">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit expedita
+        impedit commodi atque deleniti excepturi laboriosam quam, dicta, soluta
+        iusto nisi nostrum magni.
+      </p>
+      <ul class="pt-5 list-unstyled">
+        <li class="list-item">
+          <h5 class="font-weight-bolder">Email:</h5>
+          mail@gmail.com
+        </li>
+        <li class="list-item">Phone number: +2348030000000</li>
+        <li class="list-item">Address: lorem city country</li>
+      </ul>
+    </section>
+    <footer class="contact fixed-bottom bg-secondary">
+      <div class="py-2 px-5">
+        <p class="copyright text-white">&copy; All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@1.27.0/build/global/luxon.min.js" crossorigin="anonymous"></script>
+    <script src="navigation.js"></script>
+    <script src="index.js"></script>
+  </body>
+
+</html>
