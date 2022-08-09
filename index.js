@@ -2,7 +2,6 @@ const form = document.querySelector('.add-book');
 const bookTitle = document.querySelector('.title');
 const bookAuthor = document.querySelector('.author');
 const bookList = document.querySelector('.book-list');
-
 class Storage {
   constructor() {
     this.collection = [];
@@ -14,8 +13,7 @@ class Storage {
   }
 
   static removeFromCollection(target) {
-    const removeBook =
-      target.previousElementSibling.firstElementChild.textContent;
+    const removeBook = target.previousElementSibling.firstElementChild.textContent;
 
     this.collection.filter((book, index) => {
       if (book.title === removeBook) {
@@ -61,7 +59,7 @@ UI.prototype.addBookToUI = function (newBook) {
           <div class='d-flex flex-row ms-5'>
             <p class='book-title margin-sm fs-5'>${newBook.title}</p>
             <p class='book-author margin-sm fs-5'>&nbsp by ${newBook.author}</p>
-          </div>
+            </div>
           <button class='remove btn btn-danger me-5' type='button'>Remove</button>
         </li>
         `;
