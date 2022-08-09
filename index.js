@@ -1,3 +1,6 @@
+/* eslint-disable no-shadow */
+/* eslint-disable no-param-reassign */
+/* eslint-disable func-names */
 const form = document.querySelector('.add-book');
 const bookTitle = document.querySelector('.title');
 const bookAuthor = document.querySelector('.author');
