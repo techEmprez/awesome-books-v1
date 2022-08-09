@@ -15,7 +15,7 @@ links.forEach((link) => {
 });
 
 function startTime() {
-  const {DateTime} = luxon;
+  const { DateTime } = (luxon);
   const time = DateTime.now().setZone('Africa/Lagos');
   const now = time.toLocaleString(DateTime.DATETIME_MED_WITH_SECONDS);
 
